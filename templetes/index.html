@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<!--linking the css and js files-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/back.css')}}">
+    </head>
+	
+	
+    <body>
+	<div style="text-align:center; position:relative; top:200px; left:315px; font-family: Times New Roman;color: white;  font-weight:bold; background-color: rgb(38, 38, 38,0.7); border-radius: 5px;padding: 80px; width: 700px;">
+        <h1>Forecast</h1>
+        <h2>{{prediction_text}}</h2>
+
+        <a  href="https://fdm-model.herokuapp.com/"><button style="background-color:#14942B; border: 2px solid green; border-radius: 4px; color:white; height:50px; width:300px; font-size:20px;">Make Another Prediction</button></a>
+	</div>
+    </body>
